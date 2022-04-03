@@ -1,0 +1,139 @@
+body{
+    background-color: #222223;
+    
+}
+.effect-buba{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-transform: uppercase; 
+    border: 1px dotted white;
+    width: 600px;
+    height: 400px;
+    position: relative;
+}
+
+.effect-buba .image,
+.effect-buba .caption,
+.effect-buba .overlay{
+    position: absolute;
+}
+
+.effect-buba .caption{
+    /* border: 1px solid white; */
+    top: 30px;
+    left: 30px;
+    bottom: 30px;
+    right: 30px;
+
+    text-align: center;
+}
+
+.effect-buba .caption h2{
+ 
+    font-size: 2em;
+       margin-top: 4em;
+       transform: translateY(-1em);
+       transition: 0.5s;
+
+}
+.effect-buba .caption p{
+    letter-spacing: .15em;
+    opacity: 0;
+    transition: 0.5S;
+    transform: translateY(3em);
+}
+
+.effect-buba .caption .thin{
+    font-weight: lighter;
+}
+.effect-buba .caption div{
+    position: absolute;
+}
+.effect-buba .caption .border-t{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    top: 0;
+
+    transform: scaleX(0.0);
+    transition: 1s;
+
+}
+.effect-buba .caption .border-b{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    bottom: 0;
+    transform: scaleX(0.0);
+    transition: 1s;
+
+}
+.effect-buba .caption .border-l{
+  
+    height: 100%;
+    width: 1px;
+    background-color: white;
+    left: 0;
+    top: 0;
+     transform: scaleY(0.0);
+    transition: 1s;
+
+}
+.effect-buba .caption .border-r{
+  
+    height: 100%;
+    width: 1px;
+    background-color: white;
+    right: 0;
+    top: 0;
+    transform: scaleY(0.0);
+    transition: 1s;
+
+}
+
+
+/* HOVE STATE */
+
+.effect-buba .overlay{
+    /* background-color: #993300aa; */
+    width: 100%;
+    height: 100%;
+
+    transition: .25s;
+    
+}
+.effect-buba:hover .overlay{
+
+        background-color: #993300aa;
+     
+}
+.effect-buba:hover p{
+    opacity: 1;
+       transform: translateY(0);
+
+}
+.effect-buba:hover h2{
+    opacity: 1;
+       transform: translateY(0);
+
+}
+.effect-buba:hover .border-t{
+ 
+       transform:scaleX(1);
+
+}
+.effect-buba:hover .border-b{
+ 
+       transform:scaleX(1);
+
+}
+.effect-buba:hover .border-r{
+ 
+       transform:scaleY(1);
+
+}
+.effect-buba:hover .border-l{
+ 
+       transform:scaleY(1);
+
+}
